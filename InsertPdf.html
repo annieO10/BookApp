@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Insert Pdf</title>
+    <link rel="stylesheet" href="InsertPdfStyle.css">
+
+</head>
+<body>
+    <h1>My Books</h1>
+    <div class="controls">
+        <button id ="previous" class="previous">&laquo; Previous</button>
+        <p id="pageNumber"> </p>
+        <input id="InputPageNumber" type="number" placeholder="1">
+        <button id="next" class="next">Next &raquo;</button>
+        
+    </div>
+    <div class="PageSpread">
+        <canvas id="canvasLeft"></canvas>
+        <canvas id="canvasRight"></canvas>
+    </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist/build/pdf.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

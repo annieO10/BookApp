@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: flex start;
+    gap: 16px;
+    padding: 16px;
+}
+
+.controls #InputPageNumber{
+    width: 32px;
+    height: 16px;
+    font-size: 12px;
+} 
+
+.control #InputPageNumber ::placeholder{
+    color: black;
+
+}
+
+.PageSpread{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.PageSpread canvas {
+  width: 50%;
+  height: auto;
+  display: block;
+  
+}
