@@ -65,7 +65,7 @@ async function renderCover(pdf, canvas){
     
 }
 async function main(){
-    const loadingTask= pdfjsLib.getDocument(url);
+    const loadingTask= pdfjsLib.getDocument(saved.originalName);
     const pdf = await loadingTask.promise;
 
     const firstBook = document.getElementById("BookOne");
