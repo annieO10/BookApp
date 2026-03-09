@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "Kingthings";
+    src: url("./fonts/Kingthings Willow.ttf") format("truetype");
+}
+@font-face {
+    font-family: "StarlightRune";
+    src: url("./fonts/StarlightRune-Personal Use.ttf") format("truetype");
+}
+body{
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+.previous{
+    height: 20px;
+}
+.next{
+    height:20px;
+    width: 80px;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: flex start;
+    gap: 16px;
+    padding-top: 16px;
+}
+.controls p{
+    margin:0;
+}
+
+.controls #InputPageNumber{
+    width: 32px;
+    height: 12px;
+    font-size: 12px;
+} 
+
+.control #InputPageNumber ::placeholder{
+    color: black;
+
+}
+
+.PageSpread{
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+.PageSpread canvas {
+  width: auto;
+  height: 100vh;
+  display: block;
+  
+}
+
+.layout{
+    display: flex;
+}
+.main-content{
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding:0;
+    margin: 0;
+}
+.hidden {
+    display: none;
+    padding-left: 10px;
+    background-color: aliceblue;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.toc-content{
+    font-family: "StarlightRune";
+    font-weight: bold;
+}
+div.toc-content:hover{
+    color:blueviolet;
+}
+
+h2.toc-content{
+    padding: 0; 
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+
+.lib-link{
+    font-family: "Kingthings";
+    margin-top:10px;
+    margin-bottom:10px;
+    font-weight: bold;
+}
+.lib-link a:hover{
+    color:blueviolet;
+}
+.lib-link a{
+    text-decoration: none;
+    color: black;
+}

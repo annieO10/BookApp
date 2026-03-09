@@ -1,14 +1,79 @@
-.BookSpread{
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    padding: 12px;
-    box-sizing: border-box;
+@font-face {
+    font-family: "Kingthings";
+    src: url("./fonts/Kingthings Willow.ttf") format("truetype");
 }
 
-.BookSpread canvas {
-  width: 20%;
-  height: auto;
-  display: block;
-  
+body{
+    background-image: url(./images/background_lib.jpg);
+    width: 100%;
 }
+
+h1{
+    
+    font-family: "Kingthings";
+    color:black;
+    font-size: 60pt !important;
+    
+}
+
+.img1{
+    width: 100px;
+}
+
+.col.title-card{
+   
+    display:flex;
+    width: 500px;
+    padding: 10px;
+    margin:20px;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+.col.fileinput-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kingthings";
+
+}
+.upload-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:fit-content;
+    background-color: rgba(252, 249, 246, 0.882);
+    padding:10px;
+    margin-left: 20px;
+}
+#pdfInput{
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+input#pdfInput{
+    background-color: rgba(255, 255, 255, 0.393);
+}
+#uploadStatus{
+    
+    border-color: black;
+    color:black;
+    font-size: 40px;
+}
+
+#BookSpread{
+    margin:20px;
+}
+
+
+#Books{
+    display: flex;
+   
+    gap: 12px;
+    padding: 12px;
+   
+}
+
